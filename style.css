@@ -700,3 +700,9 @@ footer {
 .top a {
     color: white;
 }
+
+.strength {
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 10px;
+}
