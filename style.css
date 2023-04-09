@@ -190,9 +190,9 @@ hr {
 
 /* education */
 .edu-container {
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
-    padding: 50px, var(--accent-color);
+    padding: 50px, var(--inline-padding);
 }
 
 .school-12th-edu {
@@ -240,8 +240,9 @@ li h4 {
 
 .skills-level-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap:50px
 
 }
 
@@ -406,7 +407,7 @@ li h4 {
 /* hobbies */
 .hobbies {
 
-    margin: 50px, var(--inline-padding);
+   padding: 50px, var(--inline-padding);
 }
 
 .hobbies-container div h4 {
