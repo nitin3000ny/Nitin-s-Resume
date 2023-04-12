@@ -1,4 +1,7 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px) { 
+    details {
+        padding: 16px;
+    }
     .nav-links {
         flex-direction: column;
         justify-content: center;
