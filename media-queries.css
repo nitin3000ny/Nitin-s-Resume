@@ -1,0 +1,218 @@
+@media screen and (max-width:767px) {
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .left-nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-img {
+        margin-top: 15px;
+        width: 150px;
+    }
+
+    #banner-heading {
+        text-align: center;
+        font-size: large;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-links2 {
+        background: #14317e;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .left-about {
+        width: 70%;
+    }
+
+    .projects {
+        margin-top: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .right-edu {
+        width: 45vw;
+    }
+
+    .card-1,
+    .card-2 {
+        width: 47%;
+    }
+
+    .card-3 {
+        width: 70%;
+    }
+
+    .card-2:hover {
+        transform: translateX(-90px);
+        scale: 2;
+        z-index: 2;
+    }
+
+    .card-3:hover {
+        transform: translateY(-40px);
+        scale: 1;
+        z-index: 2;
+    }
+
+    .projects-card {
+        height: 250px;
+    }
+
+    .project-details {
+        width: 100vw;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .project-details div {
+        display: none;
+        width: 0px;
+    }
+
+    .project-details>details {
+        margin-right: 40px;
+        padding: 14px;
+        width: 100vw;
+        text-align: justify;
+
+    }
+
+    .experience-flex {
+        flex-wrap: wrap;
+    }
+
+    #internship {
+        border-right: none;
+        width: 100%;
+        padding-bottom: 22px;
+    }
+
+    .blog-card,
+    .blog-card-container {
+        float: right;
+    }
+
+    .other-experience {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .blog-detail {
+        width: 100%;
+    }
+
+    .blog-card-container {
+        width: 100vw;
+    }
+
+    .hobby-image {
+        display: none;
+    }
+
+    .hobby-sec-container {
+        margin-bottom: 20px;
+    }
+
+    .hobby-sec>h4 {
+        font-size: larger;
+    }
+
+    .hobby-sec>p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .skills-level-container li {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .nav-links2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-links2>li>a:hover {
+        scale: 1.5;
+
+    }
+
+    .right-edu {
+        display: none;
+    }
+
+    .left-edu {
+        width: 80%;
+        margin-block: 20px;
+    }
+
+    .course-head {
+        text-align: center;
+    }
+
+    .right-course {
+        display: none;
+    }
+
+    .left-course a {
+        font-size: large;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 88%;
+    }
+
+    .card-1:hover,
+
+    .card-3:hover {
+        scale: 1;
+        transform: translateY(0);
+        transform: translateX(70px);
+    }
+
+    .card-2:hover {
+        scale: 1;
+    }
+
+    .project-container h2 {
+        text-align: center;
+    }
+
+    .skills-level-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-me {
+        text-align: justify;
+    }
+}

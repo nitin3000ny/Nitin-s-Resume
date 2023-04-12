@@ -6,6 +6,8 @@
     --secondary-text: #395588;
     --accent-color: #ff6b6b;
     --neutral-color: #f8f9fa;
+
+    --inline-padding: 20px;
 }
 
 html {
@@ -17,7 +19,6 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    --inline-padding: 20px;
 
 }
 
@@ -82,7 +83,7 @@ a:hover {
 
 .container {
     max-width: 1180px;
-    padding-inline: var(--padding-inline);
+    padding-inline: var(--inline-padding);
     margin-inline: auto;
     overflow: hidden;
 }
@@ -192,7 +193,7 @@ hr {
 .edu-container {
     justify-content: center;
     gap: 50px;
-    padding: 50px, var(--inline-padding);
+    padding: 50px, var(--accent-color);
 }
 
 .school-12th-edu {
@@ -241,8 +242,10 @@ li h4 {
 .skills-level-container {
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
     flex-wrap: wrap;
-    gap:50px
+    padding: 50px, var(--inline-padding);
+
 
 }
 
@@ -259,7 +262,7 @@ li h4 {
     height: 20px;
     border-radius: 10px;
     overflow: hidden;
-    width: 500px;
+    width: 100%;
 
 }
 
@@ -405,9 +408,9 @@ li h4 {
 }
 
 /* hobbies */
-.hobbies {
+.hobbies-container {
 
-   padding: 50px, var(--inline-padding);
+    padding: 50px, 120px;
 }
 
 .hobbies-container div h4 {
@@ -419,13 +422,19 @@ li h4 {
     letter-spacing: 1px;
 }
 
-.hobbies-container {
-    margin-bottom: 30px;
+.hobby-sec-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px, var(--inline-padding);
 }
 
+.hobby-sec>p {
+    font-size: 0.9rem;
+}
 
 .hobby-image {
-    width: 30vw;
+    width: 40vw;
 }
 
 .hobby-sec-container div img {
@@ -457,7 +466,6 @@ li h4 {
     gap: 50px;
 }
 
-.left-course {}
 
 select {
     padding-left: 40px;
@@ -657,6 +665,7 @@ footer {
 }
 
 /* expreience */
+
 .blog-card {
     width: 90%;
 
@@ -672,6 +681,10 @@ footer {
     color: #0f2539;
     background: #ffffff;
     width: 30vw;
+}
+
+.blog-card-container {
+    width: 40vw;
 }
 
 #internship {
