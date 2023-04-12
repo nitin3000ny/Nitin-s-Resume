@@ -153,6 +153,7 @@
     }
 
     .nav-links2 {
+        padding:10px;
         flex-direction: column;
         gap: 30px;
     }
