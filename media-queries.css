@@ -152,16 +152,21 @@
 
     }
 
-    .nav-links2 {
-        padding:20px;
-        flex-direction: column;
-        gap: 30px;
+     .nav-links2>li>a {
+        border: 2px solid rgb(6, 66, 60);
+        padding: 10px;
+        border-radius: 6px;
     }
 
     .nav-links2>li>a:hover {
-        scale: 1.5;
-
+        
+        border: 1px solid rgb(6, 66, 60);
+        scale: 1.2;
+        background-color: rgb(7, 28, 21);
+        color: white;
+        border-color: rgb(85, 238, 187);
     }
+
 
     .right-edu {
         display: none;
