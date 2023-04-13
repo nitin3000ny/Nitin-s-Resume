@@ -1,7 +1,8 @@
-@media screen and (max-width:767px) { 
+@media screen and (max-width:767px) {
     details {
         padding: 16px;
     }
+
     .nav-links {
         flex-direction: column;
         justify-content: center;
@@ -152,7 +153,14 @@
 
     }
 
-     .nav-links2>li>a {
+    .nav-links2 {
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px;
+        background: transparent;
+    }
+
+    .nav-links2>li>a {
         border: 2px solid rgb(6, 66, 60);
         padding: 10px;
         border-radius: 6px;
@@ -166,7 +174,6 @@
         color: white;
         border-color: rgb(85, 238, 187);
     }
-
 
     .right-edu {
         display: none;
