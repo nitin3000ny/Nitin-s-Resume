@@ -62,7 +62,11 @@
     }
 
     .card-3 {
-        width: 70%;
+        width: 47%;
+    }
+
+    .card-4 {
+        width: 47%;
     }
 
     .card-2:hover {
@@ -72,8 +76,15 @@
     }
 
     .card-3:hover {
-        transform: translateY(-40px);
-        scale: 1;
+        transform: translateX(90px);
+        scale: 2;
+        z-index: 2;
+    }
+
+    .card-4:hover {
+
+        transform: translateX(-90px);
+        scale: 2;
         z-index: 2;
     }
 
@@ -167,7 +178,7 @@
     }
 
     .nav-links2>li>a:hover {
-        
+
         border: 1px solid rgb(6, 66, 60);
         scale: 1.2;
         background-color: rgb(7, 28, 21);
@@ -212,6 +223,10 @@
 
     .card-2:hover {
         scale: 1;
+    }
+    .card-4:hover{
+        scale: 1;
+        transform: translateX(-70px);
     }
 
     .project-container h2 {

@@ -555,6 +555,7 @@ li a:hover {
     margin-top: 50px;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .projects-card h4 {
@@ -574,7 +575,10 @@ li a:hover {
     background-size: cover;
 }
 
-
+.card-4{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("Screenshot\ 2023-04-18\ 224358.png");
+    background-size: cover;   
+}
 
 .projects-card:hover {
     background-position: bottom;
