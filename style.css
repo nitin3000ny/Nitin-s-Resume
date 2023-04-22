@@ -575,9 +575,9 @@ li a:hover {
     background-size: cover;
 }
 
-.card-4{
+.card-4 {
     background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("Screenshot\ 2023-04-18\ 224358.png");
-    background-size: cover;   
+    background-size: cover;
 }
 
 .projects-card:hover {
@@ -623,6 +623,29 @@ li a:hover {
     width: 30vw;
     background: rgb(220, 220, 220);
     color: var(--secondary-text);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: red !important;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    color: red !important;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #2b303946;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    background-color: #05371b;
 }
 
 /* social */
