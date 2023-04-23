@@ -172,7 +172,7 @@ li {
 
 .about-me {
     width: 50vw;
-    text-align: center;
+    text-align: justify;
     padding-inline: var(--inline-padding);
 }
 
