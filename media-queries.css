@@ -209,6 +209,9 @@
 
  
 
+.nav-links2{
+    flex-direction: row;
+}
    
     .right-edu {
         display: none;
