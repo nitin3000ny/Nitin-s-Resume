@@ -22,14 +22,14 @@
 
 <body>
 
-    <nav class="nav-bar">
+    <nav class="nav-bar flex">
         <div class="container flex nav-links">
             <div class="left-nav flex">
                 <img src="Nitin-Raina.jpeg" alt="Nitin Raina image" class="nav-img">
                 <h1 class="small-bold-text " id="banner-heading" style="color:#f8f9fa">Nitin Raina-Web Developer</h1>
             </div>
 
-            <ul class="flex nav-links2">
+            <ul class="flex nav-links2 " id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li>
                     <a href="#Contact">Contact</a>
@@ -39,8 +39,8 @@
 
                 </li>
             </ul>
-
-        </div>
+            
+        </div><div class="menu" id="toggle"><i class="fa-solid fa-bars"></i></div>
     </nav>
     <section class="about-section" id="about">
         <div class="container banner flex">
@@ -50,14 +50,17 @@
 
             </div>
             <div class="about-me">
+                
+
+
                 <h1>About</h1>
                 <p>Aspiring full stack web ninja & design warrior, beginner data wizard & content wordsmith. <br>
-• Passionate about hacking innovative solutions to crush complex problems with tech.<br>
-• Always exploring new technologies & pushing the boundaries of possibility.
-
-
-
-                </p>
+                    • Passionate about hacking innovative solutions to crush complex problems with tech.<br>
+                    • Always exploring new technologies & pushing the boundaries of possibility.
+                    
+                    
+                    
+                                    </p>
             </div>
         </div>
         <hr>
@@ -312,10 +315,12 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                       <a href="https://museum-of-candy-smoky.vercel.app/"> <img src="Museum.png" class="d-block w-100" alt="Museum of candy project"></a>
+                        <a href="https://museum-of-candy-smoky.vercel.app/"> <img src="Museum.png" class="d-block w-100"
+                                alt="Museum of candy project"></a>
                     </div>
                     <div class="carousel-item">
-                       <a href="https://pricing-panel-git-main-nitin3000ny.vercel.app/"><img src="pricingpanel.png" class="d-block w-100" alt="pricing panel project"></a> 
+                        <a href="https://pricing-panel-git-main-nitin3000ny.vercel.app/"><img src="pricingpanel.png"
+                                class="d-block w-100" alt="pricing panel project"></a>
                     </div>
 
                 </div>
@@ -339,7 +344,8 @@
                     href="https://truecertificates.com/verified/LXV4M6T9M8">The Sparks Foundation</a></p>
             <h3 style="margin-inline: 10px;" class="other-experience">Other Experience</h3>
             <details class="small-bold-text blog-detail" style="margin-right: 5px; font-weight:400">
-                <summary style="font-weight:900">Blogging <i class="fa-solid fa-angle-down fa-beat-fade"></i></summary >As the creator of
+                <summary style="font-weight:900">Blogging <i class="fa-solid fa-angle-down fa-beat-fade"></i></summary>
+                As the creator of
                 CodeForNitin, I had the opportunity to work on designing an
                 engineering syllabus. It was a great experience that allowed me to improve my technical writing skills
                 and gain more knowledge about engineering. My team and I collaborated to create interactive and engaging
@@ -351,7 +357,7 @@
                 <a class="blog-card projects-card" href="https://codefornitin.blogspot.com/"
                     style="color: orangered;"><i class="fa-brands fa-blogger"></i></a>
             </div>
-            
+
 
         </div>
     </section>
@@ -441,6 +447,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/b44be53acd.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

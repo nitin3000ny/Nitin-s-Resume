@@ -118,7 +118,9 @@ li {
 }
 
 /* nav */
-
+.menu{
+    display: none;
+}
 
 .nav-links {
     width: 100%;
@@ -153,6 +155,31 @@ li {
 
 /* about */
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 .banner {
     justify-content: center;
@@ -172,7 +199,7 @@ li {
 
 .about-me {
     width: 50vw;
-    text-align: justify;
+    text-align: center;
     padding-inline: var(--inline-padding);
 }
 

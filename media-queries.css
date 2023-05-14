@@ -3,6 +3,22 @@
         padding: 16px;
     }
 
+    .menu {
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 20px;
+    }
+
+    .menu:hover {
+        cursor: grab;
+    }
+
+    .nav-bar {
+        position: relative;
+        overflow: initial;
+    }
+
     .nav-links {
         flex-direction: column;
         justify-content: center;
@@ -28,9 +44,36 @@
     }
 
     .nav-links2 {
-        background: #14317e;
+        padding-block: 30px;
+        gap: 10px;
+        background-color: #1e2532;
+        position: absolute;
         width: 100%;
         justify-content: space-evenly;
+        flex-direction: column;
+        left: -100%;
+        top: 100%;
+        transition: left 0.25s ease-in-out;
+    }
+
+    .nav-links2.active {
+        left: 0;
+    }
+
+    .nav-links2>li>a {
+        border: 2px solid rgb(6, 66, 60);
+        background-color: #2b513a;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .nav-links2>li>a:hover {
+
+        border: 1px solid rgb(6, 66, 60);
+        scale: 1.2;
+        background-color: rgb(7, 28, 21);
+        color: white;
+        border-color: rgb(85, 238, 187);
     }
 
     .banner {
@@ -164,28 +207,9 @@
 
     }
 
-    .nav-links2 {
-        flex-direction: row;
-        gap: 30px;
-        padding: 20px;
-        background: transparent;
-    }
+ 
 
-    .nav-links2>li>a {
-        border: 2px solid rgb(6, 66, 60);
-        padding: 10px;
-        border-radius: 6px;
-    }
-
-    .nav-links2>li>a:hover {
-
-        border: 1px solid rgb(6, 66, 60);
-        scale: 1.2;
-        background-color: rgb(7, 28, 21);
-        color: white;
-        border-color: rgb(85, 238, 187);
-    }
-
+   
     .right-edu {
         display: none;
     }
@@ -224,7 +248,8 @@
     .card-2:hover {
         scale: 1;
     }
-    .card-4:hover{
+
+    .card-4:hover {
         scale: 1;
         transform: translateX(-70px);
     }
