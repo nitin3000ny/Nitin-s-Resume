@@ -107,6 +107,7 @@ li {
 
 
 /* top-banner */
+
 .nav-bar {
     padding-block: 10px;
     color: var(--primary-text);
@@ -154,8 +155,39 @@ li {
 
 
 /* about */
-
-
+.text-container{
+    position: relative;
+    margin-left: 30%;
+    
+}
+.text{
+    position: relative;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--primary-text);
+}
+.text.typing:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-left:1px solid black ;
+    animation: animatetype 4s steps(12) infinite;
+}
+@keyframes animatetype {
+   
+       40%,60%{
+        left: 100%;
+       }
+       100%{
+        left: 0%;
+       }
+      
+      
+}
 .banner {
     justify-content: center;
     gap: 50px;
@@ -180,12 +212,11 @@ li {
 
 .about-me h1 {
     margin: 10px;
-    text-align:left;
 }
 
 .about-me p {
-    text-align:left;
     line-height: 1.9rem;
+    text-align: left;
 }
 
 hr {
