@@ -155,31 +155,6 @@ li {
 
 /* about */
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
 
 .banner {
     justify-content: center;
@@ -205,9 +180,11 @@ li {
 
 .about-me h1 {
     margin: 10px;
+    text-align:left;
 }
 
 .about-me p {
+    text-align:left;
     line-height: 1.9rem;
 }
 
