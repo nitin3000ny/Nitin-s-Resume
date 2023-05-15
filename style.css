@@ -4,7 +4,7 @@
 :root {
     --primary-text: #2b2d42;
     --secondary-text: #395588;
-    --accent-color: #ff6b6b;
+    --accent-color: #1e77bf;
     --neutral-color: #f8f9fa;
 
     --inline-padding: 20px;
@@ -284,7 +284,7 @@ li h4 {
 .skills-level-container {
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 50px, var(--inline-padding);
 
@@ -302,7 +302,7 @@ li h4 {
     background: rgb(134, 132, 132);
     display: block;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
     width: 100%;
 
@@ -319,65 +319,49 @@ li h4 {
 .html {
     width: 90%;
     animation: html 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation-delay: 3s;
-    background: linear-gradient(to right, #ed5f07, #e69b6c);
 
 }
 
 .css {
     width: 60%;
     animation: css 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation-delay: 3s;
 
-    background: linear-gradient(to right, #0d95f6, #75b5ff);
 }
 
 .js {
 
     width: 60%;
     animation: js 3s;
-    animation-delay: 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: linear-gradient(to right, #edd207, #e6d86c);
 }
 
 .postgresql {
 
     width: 70%;
     animation: postgresql 3s;
-    animation-delay: 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: linear-gradient(to right, #045679, #4487ab);
 }
 
 .c-cpp {
 
     width: 70%;
     animation: c-cpp 3s;
-    animation-delay: 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: linear-gradient(to right, #045679, #4487ab);
 }
 
 .python {
     width: 80%;
     animation: python 3s;
-    animation-delay: 3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: linear-gradient(to right, #045679, #b8d13c);
 }
 
 .java {
     width: 75%;
-    animation: java 7s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: linear-gradient(to right, #fa310d, #e75959);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: java 3s;
+
 }
 
+.skill-color {
+    background: var(--accent-color);
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 @keyframes html {
     0% {
