@@ -359,7 +359,7 @@ li h4 {
 }
 
 .skill-color {
-    background: var(--accent-color);
+    background: #037a39;
     animation-delay: 3s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
