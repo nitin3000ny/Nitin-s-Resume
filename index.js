@@ -12,12 +12,15 @@ const textLoad = () => {
   }, 0);
   setTimeout(() => {
     text.textContent = "Web Designer";
-  }, 3500);
+  }, 4000);
   setTimeout(() => {
-    text.textContent = "Blogger";
-  }, 7700);
+    text.textContent = "Content Writer";
+  }, 8000);
+  setTimeout(() => {
+    text.textContent = "Computer Engineer";
+  }, 12000);
 };
 
 textLoad();
-setInterval(textLoad,12000)
+setInterval(textLoad,16000);
 
