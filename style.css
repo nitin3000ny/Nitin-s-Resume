@@ -157,7 +157,6 @@ li {
 /* about */
 .text-container {
     position: relative;
-    
     margin-left: 20%;
 
 }
@@ -509,7 +508,7 @@ select {
     outline-style: none;
 }
 
-details {
+.card-header {
     color: rgb(234, 229, 229);
     background: #397956;
     margin-block-end: 2px;
@@ -518,8 +517,16 @@ details {
     border-bottom: 1px solid rgb(234, 229, 229);
 }
 
-details:last-child {
-    margin-block-end: 20px;
+.container-collapse{
+    padding-block-end: 20px;
+}
+.btn{
+    color: white;
+
+}
+.btn:hover{
+    text-decoration: none;
+    color: rgb(213, 194, 157);
 }
 
 summary {

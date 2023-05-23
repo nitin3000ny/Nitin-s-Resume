@@ -46,15 +46,16 @@
     <section class="about-section" id="about">
         <div class="container banner flex">
             <div class=" left-about flex">
-                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-rpa-illustration_23-2149277643.jpg?w=740&t=st=1680973763~exp=1680974363~hmac=fef0aafc060bf254e167aa9eab3d85189e6c9b920ffe9b9416e669a41eba9894"
+                <img src="https://img.freepik.com/free-vector/www-concept-illustration_114360-2143.jpg?w=740&t=st=1684785133~exp=1684785733~hmac=151ea01fbf2fe61115e09f2e6e736a1b7f9ca2366da6cbb09f6e8c1fcb763a8d"
                     alt="ABOUT representation" id="about-img">
 
             </div>
             <div class="about-me">
 
 
-<div class="con flex">
-    <h1>About</h1></div>
+                <div class="con flex">
+                    <h1>About</h1>
+                </div>
                 <p>Aspiring full stack web ninja & design warrior, beginner data wizard & content wordsmith. <br>
                     • Passionate about hacking innovative solutions to crush complex problems with tech.<br>
                     • Always exploring new technologies & pushing the boundaries of possibility.
@@ -63,7 +64,7 @@
         </div>
         <div class="" id="type-container">
             <span class="span text-container">
-            <span class="typing text" id="type"></span></span>
+                <span class="typing text" id="type"></span></span>
         </div>
 
         <hr>
@@ -244,34 +245,92 @@
 
 
         </div>
-        <div class="container">
-            <h3 style="text-align: center; width: 100%; background: #b3c1ce; margin-block: 5px;">What i learnt</h3>
-            <details>
-                <summary>SQL for Data Analytics</summary>I learned the basics of SQL, including how to create and
-                manipulate
-                tables, write queries to retrieve data, and perform calculations and aggregations. I also learned
-                how to analyze data using SQL, including grouping and summarizing data, creating subqueries and
-                views, and identifying data trends over time. Additionally, I learned how to use SQL in conjunction
-                with tools like Tableau to create basic data visualizations.
-            </details>
-            <details>
-                <summary>Python</summary>I learned the basics of Python, including its syntax, data types, control
-                structures, and functions. I also learned about object-oriented programming in Python, including how to
-                use classes and objects to organize code and build reusable components. Additionally, I learned how to
-                work with modules and packages, which are used to organize and share code. I also learned about common
-                data structures and algorithms, such as lists, dictionaries, and sorting algorithms. Finally, I learned
-                about other advanced features of Python, such as decorators and generators, which can be used to write
-                more efficient and expressive code.
-            </details>
-            <details>
-                <summary>C++</summary>I learned the fundamentals of C++ programming, including its syntax, data types,
-                control structures, and functions. I also learned about object-oriented programming in C++, including
-                how to use classes and objects to organize code and build reusable components. Additionally, I learned
-                how to work with pointers, which are used to manipulate memory directly, and how to manage memory
-                allocation and deallocation. I also learned about common data structures and algorithms, such as arrays,
-                linked lists, and sorting algorithms. Finally, I learned about other advanced features of C++, such as
-                templates and operator overloading, which can be used to write more efficient and expressive code.
-            </details>
+        <div class="container container-collapse">
+            <div class="accordion" id="accordionExample">
+                <h3 style="text-align: center; width: 100%; background: #b3c1ce; margin-block: 5px;">What i learnt</h3>
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link  btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                SQL for Data Analytics
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse">
+                        <div class="card-body">
+                            I learned the basics of SQL, including how to create and
+                            manipulate
+                            tables, write queries to retrieve data, and perform calculations and aggregations. I also
+                            learned
+                            how to analyze data using SQL, including grouping and summarizing data, creating subqueries
+                            and
+                            views, and identifying data trends over time. Additionally, I learned how to use SQL in
+                            conjunction
+                            with tools like Tableau to create basic data visualizations.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-1">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Python
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                        <div class="card-body">
+                            I learned the basics of Python, including its syntax, data types, control
+                            structures, and functions. I also learned about object-oriented programming in Python,
+                            including how to
+                            use classes and objects to organize code and build reusable components. Additionally, I
+                            learned how to
+                            work with modules and packages, which are used to organize and share code. I also learned
+                            about common
+                            data structures and algorithms, such as lists, dictionaries, and sorting algorithms.
+                            Finally, I learned
+                            about other advanced features of Python, such as decorators and generators, which can be
+                            used to write
+                            more efficient and expressive code.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                C++
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body crd-three">I learned the fundamentals of C++ programming, including its
+                            syntax, data types,
+                            control structures, and functions. I also learned about object-oriented programming in C++,
+                            including
+                            how to use classes and objects to organize code and build reusable components. Additionally,
+                            I learned
+                            how to work with pointers, which are used to manipulate memory directly, and how to manage
+                            memory
+                            allocation and deallocation. I also learned about common data structures and algorithms,
+                            such as arrays,
+                            linked lists, and sorting algorithms. Finally, I learned about other advanced features of
+                            C++, such as
+                            templates and operator overloading, which can be used to write more efficient and expressive
+                            code.
+
+                        </div>
+                    </div>
+                </div>
+
     </section>
     <hr>
     <section class="projects-section" id="Projects">
@@ -295,9 +354,10 @@
             </div>
             <div class="project-details flex">
                 <div>
-                    <img src="https://img.freepik.com/free-vector/business-startup-project-launch-successful-idea_107791-13323.jpg?w=1380&t=st=1680973840~exp=1680974440~hmac=28c3011b7c0cf6d6ea4f9e57f435721150043006f143b9478196fa3c5596e088"
+                    <img src="https://img.freepik.com/free-vector/sentiment-analysis-concept-illustration_114360-5182.jpg?w=740&t=st=1684785012~exp=1684785612~hmac=48fa462e41896835343f086b0b976c713a5f9d459d9e1b84e2532f3012f496c9"
                         alt="project-illustration">
                 </div>
+
                 <details>
                     <summary class="small-bold-text">
                         About knowledge i gained in initial projects:-
@@ -346,16 +406,27 @@
             <p class="small-bold-text " id=internship>Currently intern at <a
                     href="https://truecertificates.com/verified/LXV4M6T9M8">The Sparks Foundation</a></p>
             <h3 style="margin-inline: 10px;" class="other-experience">Other Experience</h3>
-            <details class="small-bold-text blog-detail" style="margin-right: 5px; font-weight:400">
-                <summary style="font-weight:900">Blogging <i class="fa-solid fa-angle-down fa-beat-fade"></i></summary>
-                As the creator of
-                CodeForNitin, I had the opportunity to work on designing an
-                engineering syllabus. It was a great experience that allowed me to improve my technical writing skills
-                and gain more knowledge about engineering. My team and I collaborated to create interactive and engaging
-                content that accurately represented the latest industry standards. The end result was a successful and
-                well-received engineering syllabus. The project was rewarding and I look forward to more opportunities
-                like this in the future.
-            </details>
+            <p>
+                <a class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false">
+                    Blogging
+                </a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body"> As the creator of
+                    CodeForNitin, I had the opportunity to work on designing an
+                    engineering syllabus. It was a great experience that allowed me to improve my technical writing
+                    skills
+                    and gain more knowledge about engineering. My team and I collaborated to create interactive and
+                    engaging
+                    content that accurately represented the latest industry standards. The end result was a successful
+                    and
+                    well-received engineering syllabus. The project was rewarding and I look forward to more
+                    opportunities
+                    like this in the future.
+                </div>
+            </div>
+
             <div class="container blog-card-container">
                 <a class="blog-card projects-card" href="https://codefornitin.blogspot.com/"
                     style="color: orangered;"><i class="fa-brands fa-blogger"></i></a>
