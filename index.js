@@ -46,6 +46,6 @@ window.addEventListener("load", function() {
   const loader = document.getElementById("loader");
   setTimeout(function() {
     document.body.classList.add("loaded");
-  }, 2500);
+  }, 1240);
 });
 
