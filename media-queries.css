@@ -274,4 +274,8 @@
     .about-me {
         text-align: justify;
     }
+    .con span{
+        font-size:medium;
+    }
+}
 }
