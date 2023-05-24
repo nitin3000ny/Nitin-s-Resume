@@ -176,7 +176,7 @@ li {
 }
 
 .left-nav {
-    width: 30%;
+    width: 50%;
     gap: 30px;
 }
 
@@ -195,7 +195,7 @@ li {
 /* about */
 .text-container {
     position: relative;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 
 }
 
@@ -231,7 +231,15 @@ li {
 
 
 }
-
+.github{
+    border-radius: 4px;
+    padding-inline: 14px;
+    padding-block: 6px;
+    background-color:#0d95f6;
+}
+.github:hover{
+    color: var(--secondary-text);
+}
 .banner {
     justify-content: center;
     gap: 50px;
@@ -247,7 +255,14 @@ li {
 }
 
 
-
+.con{
+    flex-direction: column;
+    font-size: larger;
+    align-items: flex-start;
+}
+.con span{
+    font-size: larger;
+}
 .about-me {
     width: 50vw;
     text-align: center;
