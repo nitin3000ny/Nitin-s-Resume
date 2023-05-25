@@ -28,24 +28,29 @@ textLoad();
 setInterval(textLoad, 16000);
 
 
-// Function to increment the visitor count
-function incrementVisitorCount() {
-  // Retrieve the current count from the span element
-  var countElement = document.getElementById('count');
-  var count = parseInt(countElement.innerText);
 
-  // Increment the count by 1
-  count++;
-
-  // Update the count in the span element
-  countElement.innerText = count;
-}
 
 // Call the incrementVisitorCount function when the page loads
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
-  setTimeout(function() {
+  setTimeout(function () {
     document.body.classList.add("loaded");
   }, 1240);
 });
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (
+      entry.isIntersecting
+    ) {
+      entry.target.classList.add('animating-skill')
+    }
+    else {
+      entry.target.classList.remove('animating-skill');
+    }
+  });
+});
+
+const noAnimation = document.querySelectorAll('.no-animation');
+noAnimation.forEach((el) => observer.observe(el));
