@@ -208,7 +208,6 @@
     }
 
  
-
 .nav-links2{
     flex-direction: row;
 }
@@ -275,7 +274,6 @@
         text-align: justify;
     }
     .con span{
-        font-size:large;
+        font-size:medium;
     }
-}
 }
