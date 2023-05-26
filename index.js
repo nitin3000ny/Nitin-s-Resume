@@ -45,8 +45,19 @@ window.addEventListener('scroll', function () {
     loadingOverlay.style.display = 'none';
   }
 });
+const darkModeToggle = document.getElementById("checkbox");
+const body = document.body;
 
+darkModeToggle.addEventListener("change", function () {
+  body.classList.toggle('dark-mode');
+  footer.classList.toggle('dark-mode');
 
+  if (body.classList.contains('dark-mode')) {
+    darkModeToggle.textContent = 'Turn on Light Mode';
+  } else {
+    darkModeToggle.textContent = 'Turn on Dark Mode';
+  }
+});
 
 const text = document.querySelector(".typing");
 
