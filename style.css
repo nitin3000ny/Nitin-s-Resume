@@ -2,13 +2,14 @@
 
 /* utility-classes */
 
-  
-  body::-webkit-scrollbar {
-    width: 0; /* Adjust the width based on your preference */
-  }
 
-  
-  
+body::-webkit-scrollbar {
+    width: 0;
+    /* Adjust the width based on your preference */
+}
+
+
+
 :root {
     --primary-text: #2b2d42;
     --secondary-text: #395588;
@@ -130,27 +131,32 @@ li {
     /* animation: spin 2s linear forwards; */
     opacity: 1;
     transition: opacity 0.5s ease-out;
-  }
-  
-  .loader-inner {
+}
+
+.loader-inner {
     border: 4px solid #f3f3f3;
     border-top: 4px solid #3498db;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     animation: spin 1s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  body.loaded #loader {
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body.loaded #loader {
     opacity: 0;
     pointer-events: none;
-  }
-  
+}
+
 
 /* top-banner */
 
@@ -182,9 +188,11 @@ li {
     color: #f8f9fa;
 
 }
-.main-detail{
+
+.main-detail {
     gap: 20px;
 }
+
 .left-nav {
     width: 70%;
     gap: 30px;
@@ -209,14 +217,16 @@ li {
 
 }
 
-.text ,.text-1{
+.text,
+.text-1 {
     position: relative;
     font-weight: bold;
     font-size: larger;
     color: var(--primary-text);
 }
 
-.text.typing:before ,.text-1.typing-1::before{
+.text.typing:before,
+.text-1.typing-1::before {
     content: '';
     position: absolute;
     top: 0;
@@ -241,16 +251,20 @@ li {
 
 
 }
-.github,.btn-primary{
+
+.github,
+.btn-primary {
     border: none;
     border-radius: 4px;
     padding-inline: 14px;
     padding-block: 4px;
-    background-color:#0bb685;
+    background-color: #0bb685;
 }
-.github:hover{
+
+.github:hover {
     color: var(--secondary-text);
 }
+
 .banner {
     justify-content: center;
     gap: 50px;
@@ -266,14 +280,16 @@ li {
 }
 
 
-.con{
+.con {
     flex-direction: column;
     font-size: larger;
     align-items: flex-start;
 }
-.con span{
+
+.con span {
     font-size: larger;
 }
+
 .about-me {
     width: 50vw;
     text-align: center;
@@ -413,9 +429,11 @@ li h4 {
     width: 75%;
 
 }
-.animating-skill{
+
+.animating-skill {
     animation: skill-animation 3s;
 }
+
 .skill-color {
     background: #037a39;
     animation-timing-function: linear;
@@ -591,19 +609,24 @@ li a:hover {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px #672b2b;
 }
-.card-pr{
+
+.card-pr {
     flex-direction: column;
 }
-#pr-img{
+
+#pr-img {
     height: 40vh;
 }
-.ac-pr{
+
+.ac-pr {
     margin-block: 10px;
 }
-#pr-img img{
-/* width: 100% */
-height: 100%;
+
+#pr-img img {
+    /* width: 100% */
+    height: 100%;
 }
+
 .card-1 {
     background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("usability.png");
     background-size: cover;
@@ -720,6 +743,55 @@ footer {
     color: #8a8605;
 }
 
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-name {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.social-media>a:hover .logo-name {
+    opacity: 1;
+}
+
+.social-media>a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.social-media>a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    /* Adjust the color as needed */
+    transition: width 0.3s ease;
+}
+
+.social-media>a:hover::before {
+    width: 100%;
+}
+
+.social-media>a i {
+    transition: transform 0.3s ease;
+}
+
+.social-media>a:hover i {
+    transform: translateX(-10px);
+}
+
 /* subfooter
  */
 .subfooter {
@@ -762,7 +834,8 @@ footer {
     margin-top: 50px
 }
 
-/* strngths */.details-wrapper {
+/* strngths */
+.details-wrapper {
     background-color: #f5f5f5;
     border-radius: 4px;
     padding: 10px;
@@ -793,12 +866,15 @@ footer {
     margin-bottom: 5px;
     padding-left: 15px;
 }
-#last-hr{
+
+#last-hr {
     margin-bottom: 0;
 }
-footer{
+
+footer {
     padding-block: 50px;
 }
+
 /* back-
 t0-top */
 
@@ -811,6 +887,7 @@ t0-top */
     bottom: 70px;
     right: 30px;
     text-align: center;
+    display: none;
 }
 
 .top a {
@@ -823,6 +900,12 @@ t0-top */
     height: 100%;
     width: 100%;
 }
+
+.visible {
+    display: block;
+    /* Show the button when applied */
+}
+
 
 abbr {
     color: #037a39;

@@ -3,7 +3,16 @@ const menu = document.getElementById('nav-links');
 btn.addEventListener('click', () => {
   menu.classList.toggle('active');
 })
+window.addEventListener('scroll', function () {
+  const navBarHeight = document.getElementById('nav').offsetHeight;
+  const backButton = document.querySelector('.top');
 
+  if (window.pageYOffset > navBarHeight) {
+    backButton.classList.add('visible');
+  } else {
+    backButton.classList.remove('visible');
+  }
+});
 const text = document.querySelector(".typing");
 
 const textLoad = () => {
@@ -53,4 +62,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const noAnimation = document.querySelectorAll('.no-animation');
-noAnimation.forEach((el) => observer.observe(el));
+noAnimation.forEach((el) => observer.observe(el)); console.log(document.getElementById('#nav').offsetHeight);
+
