@@ -12,7 +12,42 @@ window.addEventListener('scroll', function () {
   } else {
     backButton.classList.remove('visible');
   }
+}); document.addEventListener('DOMContentLoaded', function () {
+  var socialMediaLinks = document.querySelectorAll('.social-media a');
+  var loadingOverlay = document.querySelector('.loading-overlay');
+
+  socialMediaLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      var linkText = link.getAttribute('data-link-text');
+      showLoadingOverlay(linkText);
+
+      setTimeout(function () {
+        hideLoadingOverlay();
+        window.location.href = link.href;
+      }, 500);
+    });
+  });
+
+  function showLoadingOverlay(linkText) {
+    var loadingText = document.createElement('span');
+    loadingText.classList.add('loading-text');
+    loadingText.textContent = 'Redirecting ' + linkText + '...';
+
+    loadingOverlay.appendChild(loadingText);
+    loadingOverlay.style.display = 'block';
+  }
+
+  function hideLoadingOverlay() {
+    var loadingText = document.querySelector('.loading-text');
+    loadingOverlay.removeChild(loadingText);
+    loadingOverlay.style.display = 'none';
+  }
 });
+
+
+
 const text = document.querySelector(".typing");
 
 const textLoad = () => {

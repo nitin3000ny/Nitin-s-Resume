@@ -286,6 +286,6 @@
     }
 
     .social-media>a:hover::before {
-        width: 40%;
+        width: 100%;
     }
 }
