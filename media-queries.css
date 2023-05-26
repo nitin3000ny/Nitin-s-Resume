@@ -278,15 +278,16 @@
         font-size: medium;
     }
 
-   .social-media {
+    .social-media {
         flex-direction: column;
         align-items: stretch;
         font-size: larger;
         padding-inline: 140px;
     }
 
-
     .social-media>a:hover::before {
         width: 100%;
     }
+
+   
 }

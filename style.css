@@ -779,6 +779,7 @@ footer {
     /* Adjust the color as needed */
     transition: width 0.3s ease;
 }
+
 /* Your existing CSS styles */
 
 .loading-overlay {
@@ -790,9 +791,9 @@ footer {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
-  }
-  
-  .loading-spinner {
+}
+
+.loading-spinner {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -803,17 +804,18 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
-      transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
-  }
-  
+}
+
 .social-media>a:hover::before {
     width: 100%;
 }
@@ -944,3 +946,5 @@ t0-top */
 abbr {
     color: #037a39;
 }
+
+
