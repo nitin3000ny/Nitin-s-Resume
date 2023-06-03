@@ -63,7 +63,7 @@ const text = document.querySelector(".typing");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "Web Developer";
+    text.textContent = "Web Developer"; text.style.color = "#1dbef7";
   }, 0);
   setTimeout(() => {
     text.textContent = "Web Designer";
@@ -97,8 +97,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (
-      entry.isIntersecting
-    ) {
+      entry.isIntersecting) {
       entry.target.classList.add('animating-skill')
     }
     else {
@@ -106,7 +105,100 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+const observed2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('experience-animation');
+
+      if (entry.target.classList.contains('experience-animation')) {
+        setTimeout(function () {
+          entry.target.classList.add("opacity-1");
+        }, 1000);
+      }
+    } else {
+      entry.target.classList.remove('experience-animation');
+      entry.target.classList.remove('opacity-1');
+    }
+  });
+});
+const observed3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('hobby-apply');
+    }
+    else {
+      entry.target.classList.remove('hobby-apply');
+    }
+  });
+});
+const observed4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('hobby-apply-left');
+    }
+    else {
+      entry.target.classList.remove('hobby-apply-left');
+    }
+  });
+});
+const observed5 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('left-edu-apply');
+    }
+    else {
+      entry.target.classList.remove('left-edu-apply');
+    }
+  });
+});
+const observed6 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('right-edu-apply');
+    }
+    else {
+      entry.target.classList.remove('right-edu-apply');
+    }
+  });
+});
+
+
 
 const noAnimation = document.querySelectorAll('.no-animation');
-noAnimation.forEach((el) => observer.observe(el)); console.log(document.getElementById('#nav').offsetHeight);
+noAnimation.forEach((el) => observer.observe(el));
+const pr = document.querySelectorAll('.experience');
+pr.forEach((el) => {
+  observed2.observe(el);
+
+});
+const hb = document.querySelectorAll('.hobby-right');
+hb.forEach((el) => {
+  observed3.observe(el);
+
+});
+const about_right = document.querySelectorAll('.about-me');
+about_right.forEach((el) => {
+  observed3.observe(el);
+
+});
+const hb2 = document.querySelectorAll('.hobby-left');
+hb2.forEach((el) => {
+  observed4.observe(el);
+
+});
+const about_left = document.querySelectorAll('.left-about');
+about_left.forEach((el) => {
+  observed4.observe(el);
+
+});
+const edu_left = document.querySelectorAll('.left-edu');
+edu_left.forEach((el) => {
+  observed5.observe(el);
+
+});
+const edu_right = document.querySelectorAll('.right-edu');
+edu_right.forEach((el) => {
+  observed6.observe(el);
+
+});
 
