@@ -12,7 +12,7 @@ window.addEventListener('scroll', function () {
   } else {
     backButton.classList.remove('visible');
   }
-}); document.addEventListener('DOMContentLoaded', function () {
+}); document.addEventListener('DOMContentLoaded', function () {body.classList.toggle('dark-mode');
   var socialMediaLinks = document.querySelectorAll('.social-media a');
   var loadingOverlay = document.querySelector('.loading-overlay');
 
@@ -59,29 +59,6 @@ darkModeToggle.addEventListener("change", function () {
   }
 });
 
-const text = document.querySelector(".typing");
-
-const textLoad = () => {
-  setTimeout(() => {
-    text.textContent = "Web Developer"; text.style.color = "#1dbef7";
-  }, 0);
-  setTimeout(() => {
-    text.textContent = "Web Designer";
-    text.style.color = "#1db847";
-  }, 4000);
-  setTimeout(() => {
-    text.textContent = "Content Writer";
-    text.style.color = "#095587";
-  }, 8000);
-  setTimeout(() => {
-    text.textContent = "Computer Engineer";
-    text.style.color = "#028300";
-  }, 12000);
-};
-
-textLoad();
-setInterval(textLoad, 16000);
-
 
 
 
@@ -90,7 +67,7 @@ window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   setTimeout(function () {
     document.body.classList.add("loaded");
-  }, 1240);
+  }, 1230);
 });
 
 const observer = new IntersectionObserver((entries) => {
@@ -113,7 +90,7 @@ const observed2 = new IntersectionObserver((entries) => {
       if (entry.target.classList.contains('experience-animation')) {
         setTimeout(function () {
           entry.target.classList.add("opacity-1");
-        }, 1000);
+        }, 800);
       }
     } else {
       entry.target.classList.remove('experience-animation');

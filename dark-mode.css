@@ -1,5 +1,7 @@
 /* dar-button */
-
+*{
+    transition: background-color 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275),color 0.25s cubic-bezier(0.175, 0.3, 0.32, 1.275);
+}
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -154,4 +156,7 @@ body.dark-mode .top{
 }
 body.dark-mode .top:hover{
     background-color: #10773f;
+}
+body.dark-mode #type{
+    color:rgb(7, 242, 77);
 }

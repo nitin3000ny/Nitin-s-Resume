@@ -13,12 +13,14 @@ body::-webkit-scrollbar {
 :root {
     --primary-text: #2b2d42;
     --secondary-text: #395588;
-    --accent-color: #1e77bf;
+    --accent-color: #0b2bb8;
     --neutral-color: #f8f9fa;
 
     --inline-padding: 20px;
 }
-
+body{
+    background-color: #ffee;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -117,6 +119,7 @@ li {
 /* loader */
 #loader {
     display: flex;
+    
     flex-direction: column;
     position: fixed;
     z-index: 9999;
@@ -124,7 +127,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fdfdfd;
+    background: var(--primary-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,16 +135,28 @@ li {
     opacity: 1;
     transition: opacity 0.5s ease-out;
 }
-
+.Loader-Nitin
+{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #02f7ff;
+}
 .loader-inner {
-    border: 4px solid #f3f3f3;
+    position: absolute;
+    top: 42%;
+    border: 4px solid #02f7ff;
     border-top: 4px solid #3498db;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     animation: spin 1s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
 }
-
+.type{
+    align-self: flex-start;
+    color: var(--neutral-color);
+    font-size: larger;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -211,45 +226,8 @@ body.loaded #loader {
 
 
 /* about */
-.text-container {
-    position: relative;
-    /* margin-left: 20%; */
-
-}
-
-.text,
-.text-1 {
-    position: relative;
-    font-weight: bold;
-    font-size: larger;
-    color: var(--primary-text);
-}
-
-.text.typing:before,
-.text-1.typing-1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    border-left: 1px solid var(--secondary-text);
-    animation: animatetype 4s steps(12) infinite;
-}
-
-@keyframes animatetype {
-
-    40%,
-    60% {
-        left: 100%;
-    }
-
-    100% {
-        left: 0%;
-    }
-
-
+#type{
+    color:var(--accent-color);
 }
 
 .github,
@@ -594,7 +572,7 @@ li a:hover {
     position: relative;
     height: 200px;
     background: black;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("Signup.png");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("Screenshot\ 2023-07-01\ 005925.png");
     background-size: cover;
     transition: all 0.25s;
 }
@@ -636,7 +614,7 @@ li a:hover {
 
 .card-2 {
 
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("cargallery.png");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.9)), url("Seattle\ Mids.png");
     background-size: cover;
 }
 
@@ -870,9 +848,8 @@ footer {
 
 .experience {
     margin-top: 50px;
-    position: relative;
     opacity: 0;
-    left:0
+    transform: scale(1);
 
 }
 
@@ -887,11 +864,11 @@ footer {
    
 
     from {
-        left: -100%;
+        transform: scale(0);
         opacity: 0;
     }
     to{
-        left: 0;
+        transform: scale(1);
         opacity: 1;
     }
 
