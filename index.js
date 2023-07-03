@@ -1,4 +1,5 @@
 const btn = document.getElementById('toggle');
+
 const menu = document.getElementById('nav-links');
 btn.addEventListener('click', () => {
   menu.classList.toggle('active');
@@ -47,7 +48,14 @@ window.addEventListener('scroll', function () {
 });
 const darkModeToggle = document.getElementById("checkbox");
 const body = document.body;
-
+const readBtn=document.getElementById('read-btn');
+readBtn.addEventListener('click',()=>{
+  if(readBtn.innerText==="Read More ..."){
+    readBtn.innerText="Read Less .. ";
+  }else{
+    readBtn.innerText="Read More ..."
+  }
+})
 darkModeToggle.addEventListener("change", function () {
   body.classList.toggle('dark-mode');
   footer.classList.toggle('dark-mode');
