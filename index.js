@@ -100,10 +100,7 @@ const observed2 = new IntersectionObserver((entries) => {
           entry.target.classList.add("opacity-1");
         }, 800);
       }
-    } else {
-      entry.target.classList.remove('experience-animation');
-      entry.target.classList.remove('opacity-1');
-    }
+    } 
   });
 });
 const observed3 = new IntersectionObserver((entries) => {
