@@ -85,9 +85,6 @@ const observer = new IntersectionObserver((entries) => {
       entry.isIntersecting) {
       entry.target.classList.add('animating-skill')
     }
-    else {
-      entry.target.classList.remove('animating-skill');
-    }
   });
 });
 const observed2 = new IntersectionObserver((entries) => {
