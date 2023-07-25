@@ -105,18 +105,12 @@ const observed3 = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('hobby-apply');
     }
-    else {
-      entry.target.classList.remove('hobby-apply');
-    }
   });
 });
 const observed4 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('hobby-apply-left');
-    }
-    else {
-      entry.target.classList.remove('hobby-apply-left');
     }
   });
 });
