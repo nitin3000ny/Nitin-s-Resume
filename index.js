@@ -46,7 +46,7 @@ window.addEventListener('scroll', function () {
     loadingOverlay.style.display = 'none';
   }
 });
-const darkModeToggle = document.getElementById("checkbox");
+const darkModeToggle = document.getElementsByClassName("checkbox")[0];
 const body = document.body;
 const readBtn=document.getElementById('read-btn');
 readBtn.addEventListener('click',()=>{
@@ -58,8 +58,6 @@ readBtn.addEventListener('click',()=>{
 })
 darkModeToggle.addEventListener("change", function () {
   body.classList.toggle('dark-mode');
-  footer.classList.toggle('dark-mode');
-
   if (body.classList.contains('dark-mode')) {
     darkModeToggle.textContent = 'Turn on Light Mode';
   } else {
@@ -85,6 +83,9 @@ const observer = new IntersectionObserver((entries) => {
       entry.isIntersecting) {
       entry.target.classList.add('animating-skill')
     }
+    else {
+      entry.target.classList.remove('animating-skill');
+    }
   });
 });
 const observed2 = new IntersectionObserver((entries) => {
@@ -97,7 +98,10 @@ const observed2 = new IntersectionObserver((entries) => {
           entry.target.classList.add("opacity-1");
         }, 800);
       }
-    } 
+    } else {
+      entry.target.classList.remove('experience-animation');
+      entry.target.classList.remove('opacity-1');
+    }
   });
 });
 const observed3 = new IntersectionObserver((entries) => {
@@ -105,12 +109,18 @@ const observed3 = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('hobby-apply');
     }
+    else {
+      entry.target.classList.remove('hobby-apply');
+    }
   });
 });
 const observed4 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('hobby-apply-left');
+    }
+    else {
+      entry.target.classList.remove('hobby-apply-left');
     }
   });
 });

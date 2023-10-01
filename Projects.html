@@ -22,7 +22,7 @@
     <title>Nitin Raina-Web Developer
     </title>
 </head>
-<body>
+<body class="dark-mode">
     
     <nav class="nav-bar flex" id="nav">
         <div class="container flex nav-links">
@@ -30,7 +30,7 @@
                 <img src="Nitin-Raina.jpeg" alt="Nitin Raina image" class="nav-img">
                 <h1 class="small-bold-text " id="banner-heading" style="color:#f8f9fa">Nitin Raina-Web Developer</h1>
                 <div>
-                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <input type="checkbox" class="checkbox pr-chck" id="checkbox">
                     <label for="checkbox" class="checkbox-label">
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
@@ -49,7 +49,7 @@
             <ul class="flex nav-links2 " id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li>
-                    <a href="#Contact">Contact</a>
+                    <a href="contactform.html">Contact</a>
                 </li>
                 <li>
                     <a href="#Projects">Projects</a>
@@ -198,7 +198,19 @@
 
 
     
-    
+    <script>const darkModeToggle = document.getElementsByClassName("checkbox")[0];
+        const body = document.body;
+      
+        darkModeToggle.addEventListener("change", function () {
+            body.classList.toggle('dark-mode');
+            footer.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = 'Turn on Light Mode';
+            } else {
+                darkModeToggle.textContent = 'Turn on Dark Mode';
+            }
+        });</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
